@@ -187,6 +187,7 @@ const cgeSkin=document.createElement('style');cgeSkin.textContent=`
 .cge-snake-eyes i:first-child{left:43%;rotate:-8deg}.cge-snake-eyes i:last-child{right:35.5%;rotate:8deg}
 .stage.workshop-live :is(.cge-cobra-hero,.cge-cobra-front,.cge-snake-eyes){display:block}
 .stage.workshop-live .cge-cobra-front{display:block}
+.stage.workshop-live :is(.cge-cobra-hero,.cge-cobra-front){pointer-events:none!important;cursor:default!important;touch-action:auto!important}
 .stage.snake-still :is(.cge-cobra-hero,.cge-cobra-front,.cge-snake-eyes,.cge-snake-eyes i){animation:none!important}
 .stage.workshop-live .cge-snake-eyes{display:none!important}
 .stage.workshop-live .products{z-index:14!important;top:52%!important;height:27%!important}
@@ -271,6 +272,8 @@ const cgeSkin=document.createElement('style');cgeSkin.textContent=`
 .stage.workshop-recap .subtitle{left:4%!important;right:4%!important;top:14.5%!important;width:auto!important;height:auto!important;padding:0!important;border-radius:0!important;background:none!important;color:var(--accent)!important;font:27px/.9 'Archivo Black',sans-serif!important;letter-spacing:-1.5px!important;box-shadow:none!important;text-shadow:0 0 10px color-mix(in srgb,var(--accent) 32%,transparent),0 4px 0 #17191d!important;rotate:0deg!important;translate:0 0!important}
 .stage.workshop-recap .cards{display:flex!important;z-index:14!important;left:7%!important;right:7%!important;top:52%!important;height:24%!important;align-items:center!important;justify-content:center!important}.stage.workshop-recap .cards .card{width:36%;height:100%;margin:-5%;object-fit:contain;filter:drop-shadow(0 8px 7px #000a)}.stage.workshop-recap .cards[data-count='1'] .card:first-child{width:48%;margin:0;rotate:0deg}.stage.workshop-recap .cards[data-count='3'] .card:nth-child(2){z-index:2;scale:1.08}.stage.workshop-recap .cards[data-count='3'] .card:first-child{rotate:-8deg}.stage.workshop-recap .cards[data-count='3'] .card:nth-child(3){rotate:8deg}
 .stage:is(.story,.post).workshop-recap :is(.cge-recap-upper,.cge-recap-coil){left:calc(-15% + 25px);width:calc(130% - 50px)}.stage:is(.story,.post).workshop-recap .cards{left:calc(7% + 25px)!important;right:calc(7% + 25px)!important}.stage:is(.story,.post).workshop-recap .subtitle{z-index:8!important}
+.stage.story.workshop-recap :is(.cge-recap-upper,.cge-recap-coil){top:calc(15% + 40px)}
+.stage.post.workshop-recap :is(.cge-recap-upper,.cge-recap-coil){left:calc(-15% + 40px);width:calc(130% - 80px)}
 .recap-card-controls .card-count-button:nth-child(2){display:none!important}
 .stage.snake-still :is(.cge-recap-upper,.cge-recap-coil,.cge-recap-tongue,.cge-recap-eye){animation:none!important}
 @keyframes cgeRecapSnakeBreath{0%,100%{transform:translate3d(-2px,3px,0) rotate(-.25deg) scale(.992)}42%{transform:translate3d(3px,-5px,0) rotate(.3deg) scale(1.018)}72%{transform:translate3d(-1px,-1px,0) scale(1.006)}}
